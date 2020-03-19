@@ -1,3 +1,14 @@
+/*
+Applicatie Level 2 Example
+Deze app laat de gebruiker reminders toevoegen. Vervolgens kunnen deze weer worden verwijderd door
+te swipen.
+
+Gemaakt door: Leroy Gabriëlse
+Student nr.: 500761062
+e-mail: leroy.gabrielse@hva.nl
+
+*/
+
 package com.example.reminder
 
 import android.os.Bundle
