@@ -1,3 +1,14 @@
+/*
+Applicatie Level 3 Task 1
+Deze app laat de gebruiker een profiel aanmaken. in het profiel staan naam,
+achternaam en een foto uit de galerij van de telefoon.
+
+Gemaakt door: Leroy Gabriëlse
+Student nr.: 500761062
+e-mail: leroy.gabrielse@hva.nl
+
+*/
+
 package com.example.userprofile
 
 import android.content.Intent

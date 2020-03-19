@@ -1,3 +1,15 @@
+/*
+Applicatie Level 3 Example
+Deze app laat de gebruiker een reminder toevoegen met een meerdere schermen.
+De toegevoegde reminders komen op het eerste scherm terecht en zijn weer te
+verwijderen door te swipen naar rechts
+
+Gemaakt door: Leroy Gabriëlse
+Student nr.: 500761062
+e-mail: leroy.gabrielse@hva.nl
+
+*/
+
 package com.example.reminder
 
 import android.annotation.SuppressLint

@@ -1,3 +1,14 @@
+/*
+Applicatie Level 3 Task 2
+Deze app laat de gebruiker tabbladen van websites toevoegen aan het hoofdmenu. Als men klikt op
+het tabblad dan gaat men naar de website via in-app browser
+
+Gemaakt door: Leroy Gabriëlse
+Student nr.: 500761062
+e-mail: leroy.gabrielse@hva.nl
+
+*/
+
 package com.example.studentportal
 
 import android.annotation.SuppressLint
