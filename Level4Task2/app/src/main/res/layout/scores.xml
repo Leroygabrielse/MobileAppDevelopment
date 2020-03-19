@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/tvWinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/computer_wins"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/datetime"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWinner" />
+
+    <ImageView
+        android:id="@+id/ivComputerTurn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimaryDark"
+        android:contentDescription="@string/image_of_the_computers_turn"
+        app:layout_constraintEnd_toStartOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate"
+        app:srcCompat="@drawable/rock" />
+
+    <ImageView
+        android:id="@+id/ivPlayerTurn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/colorPrimaryDark"
+        android:contentDescription="@string/image_of_the_players_turn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/ivComputerTurn"
+        app:srcCompat="@drawable/scissors" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/v_s"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ivPlayerTurn"
+        app:layout_constraintStart_toEndOf="@+id/ivComputerTurn"
+        app:layout_constraintTop_toTopOf="@+id/ivComputerTurn" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/computer"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/ivComputerTurn"
+        app:layout_constraintStart_toStartOf="@+id/ivComputerTurn"
+        app:layout_constraintTop_toBottomOf="@+id/ivComputerTurn" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/you"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/ivPlayerTurn"
+        app:layout_constraintStart_toStartOf="@+id/ivPlayerTurn"
+        app:layout_constraintTop_toBottomOf="@+id/ivPlayerTurn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

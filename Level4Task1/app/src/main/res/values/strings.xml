@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BoodschappenReminder</string>
+    <string name="action_settings">Settings</string>
+    <string name="hoeveel">Hoeveel?</string>
+    <string name="welk">Welk product?</string>
+    <string name="_8_x">8 x</string>
+    <string name="lasagne_bladen">Lasagne Bladen</string>
+    <string name="boodschappenlijst">Boodschappenlijst</string>
+</resources>

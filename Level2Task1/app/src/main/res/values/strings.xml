@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Places</string>
+    <string name="init">Amsterdam Dam</string>
+    <string name="cdImage">PlaceImage</string>
+</resources>

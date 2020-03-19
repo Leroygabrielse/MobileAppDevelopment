@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Steen Papier Schaar</string>
+    <string name="welcome">Welcome!</string>
+    <string name="select_rock_paper_scissor_to_play">select Rock, Paper, Scissor to play.</string>
+    <string name="your_all_time_statistics">Your all-time statistics:</string>
+    <string name="win_0_draw_0_lose_0">Win: 0 Draw: 0 Lose: 0</string>
+    <string name="you_win">You win!</string>
+    <string name="v_s">V.S</string>
+    <string name="computer_wins">Computer Wins!</string>
+    <string name="datetime">Fri 6 Jun 12:48:06 GMT+01:00 2019</string>
+    <string name="image_of_the_players_turn">image of the players turn</string>
+    <string name="image_of_the_computers_turn">image of the computers turn</string>
+    <string name="todo">TODO</string>
+    <string name="computer">Computer</string>
+    <string name="you">You</string>
+    <string name="rockbtn">rockbtn</string>
+    <string name="paperbtn">paperbtn</string>
+    <string name="sciccorsbtn">sciccorsbtn</string>
+    <string name="title">Steen Papier Schaar</string>
+    <string name="History">History</string>
+    <string name="test">Wins: %1$s Draws: %2$s Losses: %3$s</string>
+</resources>
