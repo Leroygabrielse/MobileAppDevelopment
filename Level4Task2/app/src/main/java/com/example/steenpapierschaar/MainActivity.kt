@@ -1,3 +1,14 @@
+/*
+Applicatie Level 4 Task 2
+Deze app laat de gebruiker een spel steen, papier, schaar spelen tegen de computer
+en slaat de resultaten op in een local database
+
+Gemaakt door: Leroy Gabriëlse
+Student nr.: 500761062
+e-mail: leroy.gabrielse@hva.nl
+
+*/
+
 package com.example.steenpapierschaar
 
 import android.annotation.SuppressLint
