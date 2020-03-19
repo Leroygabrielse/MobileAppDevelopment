@@ -1,3 +1,15 @@
+/*
+Applicatie Level 1 Task 1
+Deze app laat de gebruiker gokken of de eerstvolgende dobbelsteenworp
+hoger, lager of gelijk is aan de laatste worp. Het laat het resultaat zien door een plaatje van
+de dobbelsteen met het aantal ogen en tekst.
+
+Gemaakt door: Leroy Gabriëlse
+Student nr.: 500761062
+e-mail: leroy.gabrielse@hva.nl
+
+*/
+
 package com.example.higherlowergamble
 
 import androidx.appcompat.app.AppCompatActivity
