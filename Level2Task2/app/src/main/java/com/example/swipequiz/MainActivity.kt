@@ -1,5 +1,17 @@
-package com.example.swipequiz
+/*
+Applicatie Level 2 Task 1
+Deze app laat de gebruiker een aantal statements zien. De opdracht is dan om
+in het geval van een juist statement deze naar rechts te swipen en bij onjuist naar links.
+Ook kan de gebruiker het antwoord zien als hij op het statement klikt.
+Als de swipe richting juist was dan verdwijnt de vraag en anders blijft hij staan.
 
+Gemaakt door: Leroy Gabriëlse
+Student nr.: 500761062
+e-mail: leroy.gabrielse@hva.nl
+
+*/
+
+package com.example.swipequiz
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

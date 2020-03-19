@@ -1,3 +1,14 @@
+/*
+Applicatie Level 2 Task 1
+Deze app laat de gebruiker een aantal landmarks zien met bijbehorende naam
+Het is een scrollable applicatie
+
+Gemaakt door: Leroy Gabriëlse
+Student nr.: 500761062
+e-mail: leroy.gabrielse@hva.nl
+
+*/
+
 package com.example.places
 
 import androidx.appcompat.app.AppCompatActivity
