@@ -1,3 +1,14 @@
+/*
+Applicatie Level 1 Task 2
+Deze app laat de gebruiker een waarde tabel van de logische 'AND' invullen.
+Het laat vervolgens zien hoeveel antwoorden goed waren.
+
+Gemaakt door: Leroy Gabriëlse
+Student nr.: 500761062
+e-mail: leroy.gabrielse@hva.nl
+
+*/
+
 package com.example.logicaappkotlin
 
 import androidx.appcompat.app.AppCompatActivity
