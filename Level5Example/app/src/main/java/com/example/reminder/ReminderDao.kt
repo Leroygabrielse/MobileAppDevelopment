@@ -10,7 +10,7 @@ interface ReminderDao {
     fun getAllReminders(): LiveData<List<Reminder>>
 
     @Insert
-    suspend fun insertReminder(reminder: Reminder)
+    fun insertReminder(reminder: Reminder)
 
     @Delete
     suspend fun deleteReminder(reminder: Reminder)

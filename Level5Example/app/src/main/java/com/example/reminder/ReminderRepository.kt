@@ -1,30 +1,32 @@
 package com.example.reminder
 
 import android.content.Context
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 
-public class ReminderRepository(context: Context) {
-
-    private var reminderDao: ReminderDao
+class ReminderRepository(context: Context) {
+    private var reminderDao: ReminderDao?
 
     init {
         val reminderRoomDatabase = ReminderRoomDatabase.getDatabase(context)
-        reminderDao = reminderRoomDatabase!!.reminderDao()
+        reminderDao = reminderRoomDatabase?.reminderDao()
     }
 
-    suspend fun getAllReminders(): List<Reminder> {
-        return reminderDao.getAllReminders()
+    fun getAllReminders() : LiveData<List<Reminder>> {
+        return reminderDao?.getAllReminders() ?: MutableLiveData(emptyList())
     }
 
     suspend fun insertReminder(reminder: Reminder) {
-        reminderDao.insertReminder(reminder)
+        reminderDao?.insertReminder(reminder)
     }
 
+
     suspend fun deleteReminder(reminder: Reminder) {
-        reminderDao.deleteReminder(reminder)
+        reminderDao?.deleteReminder(reminder)
     }
 
     suspend fun updateReminder(reminder: Reminder) {
-        reminderDao.updateReminder(reminder)
+        reminderDao?.updateReminder(reminder)
     }
 
 }
