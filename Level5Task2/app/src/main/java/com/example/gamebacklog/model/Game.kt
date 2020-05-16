@@ -8,10 +8,10 @@ import kotlinx.android.parcel.Parcelize
 import java.util.*
 
 @Parcelize
-@Entity
+@Entity(tableName = "gameTable")
 data class Game (
     var title: String,
     var platforms: String,
-    var releaseDate: Date,
+    //var releaseDate: Date,
     @PrimaryKey var id: Long? = null
 ) : Parcelable

@@ -6,7 +6,18 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38dcd66f-1295-418e-9271-1e7bc0f08cb6" name="Default Changelist" comment="" />
+    <list default="true" id="38dcd66f-1295-418e-9271-1e7bc0f08cb6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Level5Task2/app/src/main/java/com/example/gamebacklog/adapter/GameAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Level5Task2/app/src/main/java/com/example/gamebacklog/adapter/GameAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Level5Task2/app/src/main/java/com/example/gamebacklog/model/Game.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Level5Task2/app/src/main/java/com/example/gamebacklog/model/Game.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Level5Task2/app/src/main/java/com/example/gamebacklog/ui/add/ActivityAdd.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Level5Task2/app/src/main/java/com/example/gamebacklog/ui/add/ActivityAdd.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Level5Task2/app/src/main/java/com/example/gamebacklog/ui/main/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Level5Task2/app/src/main/java/com/example/gamebacklog/ui/main/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Level5Task2/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Level5Task2/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Level5Task2/app/src/main/res/layout/content_activity_add.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Level5Task2/app/src/main/res/layout/content_activity_add.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Level5Task2/app/src/main/res/layout/content_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Level5Task2/app/src/main/res/layout/content_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Level5Task2/app/src/main/res/layout/game_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Level5Task2/app/src/main/res/layout/game_item.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

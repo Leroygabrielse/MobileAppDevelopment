@@ -11,21 +11,6 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/TIL1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TIL2">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etPlatform"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/platform" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/TIL2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,11 +25,26 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TIL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TIL1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPlatform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/platform" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/TIL3"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TIL1">
+        app:layout_constraintTop_toBottomOf="@+id/TIL2">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etDay"
@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
         app:layout_constraintStart_toEndOf="@+id/TIL3"
-        app:layout_constraintTop_toBottomOf="@+id/TIL1">
+        app:layout_constraintTop_toBottomOf="@+id/TIL2">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etMonth"
@@ -74,7 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
         app:layout_constraintStart_toEndOf="@+id/TIL4"
-        app:layout_constraintTop_toBottomOf="@+id/TIL1">
+        app:layout_constraintTop_toBottomOf="@+id/TIL2">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etYear"
