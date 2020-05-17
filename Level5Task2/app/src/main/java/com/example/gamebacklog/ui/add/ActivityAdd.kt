@@ -51,7 +51,7 @@ class ActivityAdd : AppCompatActivity() {
 
                 try {
                     var day = etDay.text.toString().toInt()
-                    var month = etMonth.text.toString().toInt() - 1
+                    var month = etMonth.text.toString().toInt()
                     var year = etYear.text.toString().toInt()
                     val date = LocalDate.of(year, month, day)
                     val game = Game(etTitle.text.toString(), etPlatform.text.toString(), date)
