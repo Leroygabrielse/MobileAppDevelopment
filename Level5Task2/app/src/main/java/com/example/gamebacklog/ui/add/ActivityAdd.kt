@@ -34,14 +34,11 @@ class ActivityAdd : AppCompatActivity() {
         supportActionBar?.title = "Add Game"
 
         initViews()
-        //initViewModel()
 
     }
 
     @RequiresApi(Build.VERSION_CODES.O)
     private fun initViews(){
-
-        //var dateFormatted = Converters().fromTimestamp(12062021)
 
         fab.setOnClickListener { view ->
 
@@ -50,14 +47,8 @@ class ActivityAdd : AppCompatActivity() {
             var year = etYear.text.toString().toInt()
 
             val date = LocalDate.of(year, month, day)
-
-            //var cal = Calendar.getInstance()
-            //cal.set(year,month,day)
-
-            //Log.println(Log.ERROR, "DEBUGGING", Converters().dateToTimestamp(Date()).toString())
-
             if(etTitle.text.toString().isNotBlank() && etPlatform.text.toString().isNotBlank()){
-                val game = Game(etTitle.text.toString(), etPlatform.text.toString(), date) //cal.time
+                val game = Game(etTitle.text.toString(), etPlatform.text.toString(), date)
                 val resultIntent = Intent()
                 resultIntent.putExtra(EXTRA_GAME, game)
                 setResult(Activity.RESULT_OK, resultIntent)
@@ -80,23 +71,3 @@ class ActivityAdd : AppCompatActivity() {
         }
     }
 }
-/*
- private fun initViewModel(){
-        addViewModel = ViewModelProvider(this).get(ActivityAddViewModel::class.java)
-
-        addViewModel.game.observe(this, Observer { game ->
-            if (game != null){
-                etTitle.setText(game.title)
-                etPlatform.setText(game.platforms)
-            }
-        })
-
-        addViewModel.error.observe(this, Observer { message ->
-            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
-        })
-
-        addViewModel.success.observe(this, Observer { success ->
-            if (success!!) finish()
-        })
-    }
- */
