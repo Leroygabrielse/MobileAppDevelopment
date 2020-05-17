@@ -40,16 +40,16 @@
 
                 <TextView
                     android:id="@+id/tvPlatform"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
                     android:text="@string/pc_xbox" />
 
                 <TextView
                     android:id="@+id/tvReleaseDate"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="2"
                     android:text="@string/release_11_august_2020" />
             </LinearLayout>
 

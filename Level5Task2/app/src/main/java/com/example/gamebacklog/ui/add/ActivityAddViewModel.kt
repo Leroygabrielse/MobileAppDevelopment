@@ -38,6 +38,10 @@ class ActivityAddViewModel(application: Application): AndroidViewModel(applicati
                 error.value = "Platform must must not be empty"
                 false
             }
+            game.value!!.releaseDate.toString().isBlank()->{
+                error.value = "Date must not be empty"
+                false
+            }
             else->true
         }
     }
