@@ -12,6 +12,6 @@ import java.util.*
 data class Game (
     var title: String,
     var platforms: String,
-    //var releaseDate: Date,
+    var releaseDate: Date,
     @PrimaryKey var id: Long? = null
 ) : Parcelable

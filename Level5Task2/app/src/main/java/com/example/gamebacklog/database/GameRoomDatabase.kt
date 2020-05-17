@@ -13,7 +13,7 @@ import kotlinx.coroutines.internal.synchronized
 import kotlinx.coroutines.launch
 import java.util.*
 
-@Database(entities = [Game::class], version = 1, exportSchema = false)
+@Database(entities = [Game::class], version = 3, exportSchema = false)
 @TypeConverters(Converters::class)
 abstract class GameRoomDatabase: RoomDatabase(){
     abstract fun gameDao(): GameDao

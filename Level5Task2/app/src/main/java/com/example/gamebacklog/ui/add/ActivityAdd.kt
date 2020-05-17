@@ -4,16 +4,12 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Toast
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import com.example.gamebacklog.R
 import com.example.gamebacklog.model.Game
-
 import kotlinx.android.synthetic.main.activity_add.*
 import kotlinx.android.synthetic.main.content_activity_add.*
+
 import java.util.*
 
 const val EXTRA_GAME = "EXTRA_GAME"
@@ -35,9 +31,17 @@ class ActivityAdd : AppCompatActivity() {
     }
 
     private fun initViews(){
+
+        //var dateFormatted = Converters().fromTimestamp(12062021)
+
         fab.setOnClickListener { view ->
+
+            var day = etDay.text.toString().toInt()
+            var month = etMonth.text.toString().toInt() - 2
+            var year = etYear.text.toString().toInt() - 1870
+
             if(etTitle.text.toString().isNotBlank() && etPlatform.text.toString().isNotBlank()){
-                val game = Game(etTitle.text.toString(), etPlatform.text.toString())
+                val game = Game(etTitle.text.toString(), etPlatform.text.toString(), Date(day,month,year))
                 val resultIntent = Intent()
                 resultIntent.putExtra(EXTRA_GAME, game)
                 setResult(Activity.RESULT_OK, resultIntent)
