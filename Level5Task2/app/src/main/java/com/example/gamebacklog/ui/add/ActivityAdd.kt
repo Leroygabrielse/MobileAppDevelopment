@@ -2,15 +2,22 @@ package com.example.gamebacklog.ui.add
 
 import android.app.Activity
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.example.gamebacklog.R
+import com.example.gamebacklog.database.Converters
 import com.example.gamebacklog.model.Game
 import kotlinx.android.synthetic.main.activity_add.*
 import kotlinx.android.synthetic.main.content_activity_add.*
+import java.text.DateFormat
+import java.time.LocalDate
 
 import java.util.*
+import kotlin.math.log
 
 const val EXTRA_GAME = "EXTRA_GAME"
 
@@ -18,6 +25,7 @@ class ActivityAdd : AppCompatActivity() {
 
     private lateinit var addViewModel: ActivityAddViewModel
 
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add)
@@ -30,6 +38,7 @@ class ActivityAdd : AppCompatActivity() {
 
     }
 
+    @RequiresApi(Build.VERSION_CODES.O)
     private fun initViews(){
 
         //var dateFormatted = Converters().fromTimestamp(12062021)
@@ -37,11 +46,18 @@ class ActivityAdd : AppCompatActivity() {
         fab.setOnClickListener { view ->
 
             var day = etDay.text.toString().toInt()
-            var month = etMonth.text.toString().toInt() - 2
-            var year = etYear.text.toString().toInt() - 1870
+            var month = etMonth.text.toString().toInt() - 1
+            var year = etYear.text.toString().toInt()
+
+            val date = LocalDate.of(year, month, day)
+
+            //var cal = Calendar.getInstance()
+            //cal.set(year,month,day)
+
+            //Log.println(Log.ERROR, "DEBUGGING", Converters().dateToTimestamp(Date()).toString())
 
             if(etTitle.text.toString().isNotBlank() && etPlatform.text.toString().isNotBlank()){
-                val game = Game(etTitle.text.toString(), etPlatform.text.toString(), Date(day,month,year))
+                val game = Game(etTitle.text.toString(), etPlatform.text.toString(), date) //cal.time
                 val resultIntent = Intent()
                 resultIntent.putExtra(EXTRA_GAME, game)
                 setResult(Activity.RESULT_OK, resultIntent)

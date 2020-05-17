@@ -5,6 +5,7 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import kotlinx.android.parcel.Parcelize
+import java.time.LocalDate
 import java.util.*
 
 @Parcelize
@@ -12,6 +13,6 @@ import java.util.*
 data class Game (
     var title: String,
     var platforms: String,
-    var releaseDate: Date,
+    var releaseDate: LocalDate,
     @PrimaryKey var id: Long? = null
 ) : Parcelable

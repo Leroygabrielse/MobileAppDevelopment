@@ -5,15 +5,10 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import androidx.sqlite.db.SupportSQLiteDatabase
 import com.example.gamebacklog.model.Game
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.internal.synchronized
-import kotlinx.coroutines.launch
-import java.util.*
 
-@Database(entities = [Game::class], version = 3, exportSchema = false)
+
+@Database(entities = [Game::class], version = 4, exportSchema = false)
 @TypeConverters(Converters::class)
 abstract class GameRoomDatabase: RoomDatabase(){
     abstract fun gameDao(): GameDao
