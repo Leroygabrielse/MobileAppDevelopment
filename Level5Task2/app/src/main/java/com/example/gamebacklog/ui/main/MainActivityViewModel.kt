@@ -31,4 +31,5 @@ class MainActivityViewModel(application: Application): AndroidViewModel(applicat
             gameRepo.deleteAllGames()
         }
     }
+
 }

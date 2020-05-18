@@ -9,10 +9,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import androidx.activity.viewModels
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.room.Index
 import com.example.gamebacklog.R
 import com.example.gamebacklog.adapter.GameAdapter
 import com.example.gamebacklog.model.Game
@@ -29,6 +31,7 @@ class MainActivity : AppCompatActivity() {
 
     private val games = arrayListOf<Game>()
     private val gameAdapter = GameAdapter(games)
+    private var temporary = arrayListOf<Game>()
 
     private val viewModel: MainActivityViewModel by viewModels()
 
@@ -93,9 +96,9 @@ class MainActivity : AppCompatActivity() {
             when (requestCode) {
                 ADD_GAME_REQUEST_CODE -> {
                     data?.let {safeData ->
-                        val reminder = safeData.getParcelableExtra<Game>(EXTRA_GAME)
+                        val game = safeData.getParcelableExtra<Game>(EXTRA_GAME)
 
-                        reminder?.let { safeGame ->
+                        game?.let { safeGame ->
                             viewModel.insertGame(safeGame)
                         } ?: run {
                             Log.e("test", "game is null")
@@ -120,7 +123,12 @@ class MainActivity : AppCompatActivity() {
         return when (item.itemId) {
             R.id.action_delete_shopping_list -> {
                 //delete full list
+
                 viewModel.deleteAllGames()
+                Snackbar.make(rvGames, "Backlog Deleted!", Snackbar.LENGTH_LONG)
+                    .setAction("Undo") {
+                        
+                    }.show()
                 true
             }
             else -> super.onOptionsItemSelected(item)
