@@ -8,7 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="38dcd66f-1295-418e-9271-1e7bc0f08cb6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Level5Task2/app/src/main/java/com/example/gamebacklog/database/GameDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Level5Task2/app/src/main/java/com/example/gamebacklog/database/GameDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Level5Task2/app/src/main/java/com/example/gamebacklog/ui/main/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Level5Task2/app/src/main/java/com/example/gamebacklog/ui/main/MainActivity.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

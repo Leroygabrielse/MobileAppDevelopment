@@ -18,6 +18,7 @@ import com.example.gamebacklog.adapter.GameAdapter
 import com.example.gamebacklog.model.Game
 import com.example.gamebacklog.ui.add.ActivityAdd
 import com.example.gamebacklog.ui.add.EXTRA_GAME
+import com.google.android.material.snackbar.Snackbar
 
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
@@ -72,8 +73,12 @@ class MainActivity : AppCompatActivity() {
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
                 val position = viewHolder.adapterPosition
                 val gameToDelete = games[position]
+                val temporary = games[position]
                 viewModel.deleteGame(gameToDelete)
-
+                Snackbar.make(rvGames, "Game Deleted!", Snackbar.LENGTH_LONG)
+                        .setAction("Undo") { _ ->
+                            viewModel.insertGame(temporary)
+                        }.show()
             }
 
         }
