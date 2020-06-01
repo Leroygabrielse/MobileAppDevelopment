@@ -9,11 +9,17 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.item_color.view.*
 
-class ColorItemAdapter (private val colors: List<ColorItem>): RecyclerView.Adapter<ColorItemAdapter.ViewHolder>(){
+class ColorItemAdapter (private val colors: List<ColorItem>, private val onClick: (ColorItem) -> Unit): RecyclerView.Adapter<ColorItemAdapter.ViewHolder>(){
 
     private lateinit var context: Context
 
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
+        init {
+            itemView.setOnClickListener{
+                onClick(colors[adapterPosition])
+            }
+        }
+
         fun bind(colorItem: ColorItem){
             Glide.with(context).load(colorItem.getImageUrl()).into(itemView.ivColor)
         }
